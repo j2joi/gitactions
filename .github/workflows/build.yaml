@@ -8,13 +8,13 @@ jobs:
     name: Build With Terraform
     runs-on: ubuntu-latest
     env:
-      TF_VAR_tenancy_ocid: ${{secrets.OCI_TENANCY_OCID}}
-      TF_VAR_compartment_ocid: ${{secrets.OCI_COMPARTMENT_OCID}}
-      TF_VAR_user_ocid: ${{secrets.OCI_USER_OCID}}
-      TF_VAR_private_key_password: ${{secrets.OCI_PASSPHRASE}}
-      TF_VAR_private_key: ${{secrets.OCI_KEY_FILE}}
-      TF_VAR_fingerprint: ${{secrets.OCI_FINGERPRINT}}
-      TF_VAR_region: ${{secrets.OCI_REGION}}
+      TF_VAR_tenancy_ocid: ${{secrets.TF_VAR_tenancy_ocid}}
+      TF_VAR_compartment_ocid: ${{secrets.TF_VAR_compartment_ocid}}
+      TF_VAR_user_ocid: ${{secrets.TF_VAR_user_ocid}}
+      TF_VAR_private_key_password: ${{secrets.TF_VAR_private_key_password}}
+      TF_VAR_private_key: ${{secrets.TF_VAR_private_key}}
+      TF_VAR_fingerprint: ${{secrets.TF_VAR_fingerprint}}
+      TF_VAR_region: ${{secrets.TF_VAR_region}}
       TF_VAR_bucket_name: "gitactions_bucket"
       
     steps:
