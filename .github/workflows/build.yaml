@@ -1,8 +1,8 @@
-name: oci-terraform-build-demo
+name: oci-terraform-gitactions-demo
 on:
   push:
     branches:
-      - github-actions-tf
+      - main
 jobs:
   build-with-terraform:
     name: Build With Terraform
