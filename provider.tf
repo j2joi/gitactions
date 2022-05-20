@@ -21,9 +21,6 @@ variable "private_key_path" {
 variable "compartment_ocid" {
 }
 
-variable "kms_key_ocid" {
-}
-
 variable "region" {
   default = "us-ashburn-1"
 }
