@@ -34,3 +34,5 @@ data "oci_objectstorage_bucket_summaries" "buckets1" {
 output "buckets" {
   value = data.oci_objectstorage_bucket_summaries.buckets1.bucket_summaries
 }
+
+
