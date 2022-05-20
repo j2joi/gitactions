@@ -24,6 +24,9 @@ variable "private_key" {
 variable "compartment_ocid" {
 }
 
+variable "bucket_name" {  
+}
+
 variable "region" {
   default = "us-ashburn-1"
 }
@@ -41,4 +44,5 @@ provider "oci" {
   private_key_path = var.private_key_path
   private_key = var.private_key
 }
+
 
